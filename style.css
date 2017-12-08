@@ -1,0 +1,501 @@
+@import url(reset.css);
+
+html{
+	height: 100%
+	font-size: 14px;
+}
+
+*{
+	font-family: 'Helvetica';
+	box-sizing: border-box;
+	
+}
+
+.sidebar{
+	display: none;
+}
+
+header{
+	width: 100%;
+	overflow: hidden;
+	position: relative;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	height: 150px;
+}
+
+header .header-bg{
+	position: absolute;
+	width: 100%;
+	height: 100%;
+	filter:saturate(0.1);
+	opacity: 0.2;
+	background-image: url('img/background.jpg');
+	background-position: 40%;
+	background-size: cover;
+}
+
+header .title-box{
+	width: 80%;
+	max-width: 300px;
+	height: 100px;
+	border: 1px solid black;
+	text-align: center;
+	z-index: 123;
+}
+.title-box .up{
+	height: 50%;
+	border-bottom: 1px solid black;
+	font-size: 32px;
+	font-weight: bolder;
+	line-height: 45px;
+}
+
+.title-box .down{
+	height: 50%;
+	font-size: 20px;
+	font-weight: bolder;
+	line-height: 50px;
+}
+
+.sidebar-mobile{
+	background-color: #545456;
+	padding: 40px 20px;
+	color: #BFBFBF;
+}
+.sidebar-mobile .profile-pic{
+	width: 150px;
+	height: 150px;
+	background-image: url('img/profile_pic.jpg');
+	background-size: 300%;
+	background-position: 45% 30%;
+	border-radius: 50%;
+	margin: auto;
+	border: 2px solid white;
+}
+.sidebar-mobile .sidebar-content{
+	text-align: center;
+}
+
+.sidebar-mobile .sidebar-content .cat{
+	margin-top: 40px;
+}
+.sidebar-mobile .sidebar-content .title{
+	font-weight: bolder;
+	color: white;
+}
+.sidebar-mobile .sidebar-content .personal-info .list{
+	margin-top: 10px;
+}
+.sidebar-mobile .sidebar-content .personal-info .subtitle{
+	font-size: 12px;
+}
+
+.sidebar-mobile .contact .email{
+	color: #BFBFBF;
+	display: block;
+}
+.sidebar-mobile i{
+	margin-top: 10px;
+}
+
+.reseme{
+	padding: 20px;
+}
+.reseme .cat{
+	width: 100%;
+	font-size: 16px;
+}
+.reseme .title{
+	display: flex;
+}
+
+.reseme .title .title-text{
+	flex: initial;
+	font-size: 18px;
+	font-weight: bolder;
+}
+.reseme .title hr{
+	flex: 1;
+    margin-left: 20px;
+    height: 4px;
+    border-width: 0 0 1px 0;
+    border-bottom: 1px solid black;
+}
+.work-experience{
+	margin-top: 20px;
+}
+.work-experience .list{
+	margin: 25px 0;
+}
+
+.work-experience .list .date{
+	font-weight: bolder;
+	margin-bottom: 10px;
+}
+
+.studium{
+	margin-top: 60px;
+}
+
+.studium .list{
+	margin: 25px 0;
+}
+
+.studium .list .uni{
+	font-weight: bolder;
+}
+.studium .list:nth-child(2):before {
+	content: '2010 - 2015';
+	display: block;
+	font-size: 14px;
+	margin-bottom: 5px;
+}
+.studium .list:nth-child(3):before {
+	content: '2013 - 2014';
+	display: block;
+	font-size: 14px;
+	margin-bottom: 5px;
+}
+.studium .list:nth-child(4):before {
+	content: 'August 2012';
+	display: block;
+	font-size: 14px;
+	margin-bottom: 5px;
+}
+
+.sprachen{
+	margin-top: 60px;
+}
+.sprachen .list{
+	width: 200px;
+	display: flex;
+	justify-content: space-between;
+	margin: 15px 0;
+}
+
+.sprachen .list:nth-child(1) .language:after{
+	content: 'Muttersprecher';
+	display: block;
+	font-size: 12px;
+	font-style: italic;
+	color: #929296;
+}
+.sprachen .list:nth-child(2) .language:after{
+	content: 'TOEIC 970/990';
+	display: block;
+	font-size: 12px;
+	font-style: italic;
+	color: #929296;
+}
+.sprachen .list:nth-child(3) .language:after{
+	content: 'Muttersprecher';
+	display: block;
+	font-size: 12px;
+	font-style: italic;
+	color: #929296;
+}
+.sprachen .list:nth-child(4) .language:after{
+	content: 'TestDaf 19/20';
+	display: block;
+	font-size: 12px;
+	font-style: italic;
+	color: #929296;
+}
+
+.edv{
+	margin-top: 60px;
+}
+.edv-content{
+	margin-top: 20px;
+}
+
+.edv-content .text, .edv-content img{
+	display: inline-block;
+}
+.edv-content .text{
+	vertical-align: top;
+}
+.edv-content img{
+	margin-left: 5px;
+}
+
+.portfolio{
+	margin-top: 60px;
+}
+
+.portfolio .work{
+	display: block;
+	margin-top: 20px;
+	overflow: hidden;
+	width: 100%;
+}
+
+.portfolio .work img{
+	background-color: black;
+	width: 100%;
+}
+
+.portfolio .work:hover img{
+	width: 100%;
+	filter: brightness(0.5);
+	transition: all 0.3s ease;
+}
+
+footer{
+	padding: 20px;
+	background-color: #545456;
+	color: #BFBFBF;
+	text-align: center;
+}
+footer .update{
+	margin-top: 5px;
+}
+
+
+@media screen and (min-width: 768px){
+	
+
+	.sidebar{
+		display: block;
+		background-color: #545456;
+		color: #BFBFBF;
+		width: 290px;
+		height: 100%;
+		position: fixed;
+		top: 0;
+		left: 0;
+		padding: 40px 35px 0 35px;
+		overflow-y: scroll;
+	}
+
+	.sidebar .sidebar-content{
+		width: 100%;
+	}
+
+	.sidebar .profile-pic{
+		width: 150px;
+		height: 150px;
+		background-image: url('img/profile_pic.jpg');
+		background-size: 300%;
+		background-position: 45% 30%;
+		border-radius: 50%;
+		margin: auto;
+		border: 2px solid white;
+	}
+
+	.sidebar .title{
+		color: white;
+		font-weight: bolder;
+		margin-top: 40px;
+		margin-bottom: 20px;
+		text-align: center;
+	}
+
+	.personal-info .list{
+		margin-bottom: 15px;
+	}
+
+	.list .subtitle{
+		font-size: 10px;
+		font-style: oblique;
+		margin-bottom: 3px;
+	}
+
+	.contact{
+		
+	}
+	.content .sidebar-mobile{
+		display: none;
+	}
+	.email{
+		display: block;
+		color: #BFBFBF;
+	}
+
+	.email, .mobile, .address{
+		margin-bottom: 15px;
+		padding-left: 20px;
+	}
+	.email:before, .mobile:before, .address:before{
+		font-family: 'FontAwesome';
+		position: absolute;
+		margin-left: -20px;
+	}
+
+	.email:before{
+		content: '\f0e0';
+	}
+
+	.mobile:before{
+		content: '\f095';
+	}
+
+	.address:before{
+		content: '\f041';
+	}
+	.social .fb, .social .ig{
+		margin-bottom: 15px;
+		padding-left: 20px;
+		color: white;
+		font-size: 11px;
+	}
+
+	.fb:before, .ig:before{
+		font-family: 'FontAwesome';
+		position: absolute;
+		margin-left: -18px;
+		font-size: 14px;
+	}
+
+	.fb:before{
+		content: '\f082';
+	}
+	.ig:before{
+		content: '\f16d';
+	}
+
+
+
+	header{
+		height: 350px;
+		padding-left: 290px;
+	}
+
+	header .header-bg{
+		background-position-y: 40%;
+		left: 290px;
+	}
+
+	header .title-box{
+		width: 300px;
+		height: 100px;
+		border: 1px solid black;
+		text-align: center;
+		z-index: 123;
+	}
+
+	.title-box .up{
+		height: 50%;
+		border-bottom: 1px solid black;
+		font-size: 32px;
+		font-weight: bolder;
+		line-height: 45px;
+	}
+
+	.title-box .down{
+		height: 50%;
+		font-size: 20px;
+		font-weight: bolder;
+		line-height: 50px;
+	}
+	.reseme{
+		width: 100%;
+		padding: 50px 3% 50px calc(290px + 3%);
+	}
+	
+	.sprachen .spachen-content{
+		display: flex;
+		flex-wrap: wrap;
+		width: 450px;
+	}
+	.sprachen .spachen-content .list:nth-child(2),
+	.sprachen .spachen-content .list:nth-child(4){
+		margin-left: 50px;
+	}
+	
+	.portfolio .work{
+		float: left;
+		margin-left: 10px;
+		width: calc((100% - 10px) / 2);
+	}
+	.portfolio .work:nth-child(2n-1){
+		margin-left: 0;
+	}
+	.portfolio-content{
+		position: relative;
+	}
+	.portfolio-content:after{
+		content: '';
+		width: 100%;
+		display: block;
+		height: 1px;
+		position: relative;
+		clear: both;
+	}
+	footer{
+		margin-left: 290px;
+	}
+	footer .copyright, footer .update{
+		margin: 0;
+		display: inline-block;
+	}
+	footer .update{
+		margin-left: 10px;
+	}
+	
+}
+
+@media screen and (min-width: 992px) {
+	.studium .list{
+		padding-left: 200px;
+	}
+	.studium .list:nth-child(2):before{
+		position: absolute;
+		margin-left: -200px;
+		font-weight: bolder;
+	}
+	.studium .list:nth-child(2):after{
+		position: absolute;
+		content: '';
+		height: 120px;
+		border-right: 1px solid black;
+		margin-left: -62px;
+		margin-top: -28px;
+	}
+	.studium .list:nth-child(3):before{
+		position: absolute;
+		margin-left: -200px;
+		font-weight: bolder;
+	}
+	.studium .list:nth-child(4):before{
+		position: absolute;
+		margin-left: -200px;
+		font-weight: bolder;
+	}
+	.studium .uni:before{
+		content: '';
+		width: 12px;
+		height: 12px;
+		border-radius: 50%;
+		background-color: black;
+		position: absolute;
+		margin-left: -67px;
+	}
+	.portfolio .work{
+		float: left;
+		margin-left: 10px;
+		width: calc((100% - 20px) / 3);
+	}
+	.portfolio .work:nth-child(2n-1){
+		margin-left: 10px;
+	}
+	.portfolio .work:nth-child(3n-2){
+		margin-left: 0;
+	}
+}
+
+@media screen and (min-width: 1200px) {
+	.portfolio .work{
+		float: left;
+		margin-left: 10px;
+		width: calc((100% - 30px) / 4);
+	}
+	.portfolio .work:nth-child(3n-2){
+		margin-left: 10px;
+	}
+	.portfolio .work:nth-child(4n-3){
+		margin-left: 0;
+	}
+}
